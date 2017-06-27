@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<!--1,lang="zh-cn"-->
+<head lang="zh-cn">
+  <meta charset="UTF-8">
+  <!--2,viewport-->
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <!--3,x-ua-compatible-->
+  <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+  <title></title>
+  <!--4引入两个兼容文件-->
+  <!--[if it IE 9]>
+  <script src="../../resources/js/html5shiv.min.js"></script>
+  <script src="../../resources/js/respond.min.js"></script>
+  <![endif]-->
+  <!--6引入bootstrap.css-->
+  <link rel="stylesheet" href="../../resources/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/case_detail.css">
+</head>
+<body>
+  <div id="main_header"></div>
+
+  <div class="modal fade" id="myModal" data-backdrop="static">
+    <div class="model_center" style="width: 50rem">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close" data-dismiss="modal">&times;</span>
+          <h4>Modal title</h4>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--content-->
+  <section>
+    <!--面包屑导航-->
+    <div id="breadcrumb_nav">
+      <ol class="breadcrumb">
+        <li><a href="#">首页</a></li>
+        <li><a href="#" class="active">执行案件</a></li>
+      </ol>
+    </div>
+    <div class="container-fluid">
+      <!--主标题-->
+      <div class="row">
+        <div class="col-xs-12">
+          <h3>2017浙01010案件</h3>
+        </div>
+      </div>
+      <!--案件主题内容-->
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="panel panel-default" style="min-height: 15rem">
+                <div class="panel-heading clearfix">
+                  <i class="pull-left"></i>
+                  <h4 class="panel-title pull-left">案件信息</h4>
+                </div>
+                <div class="panel-body">
+                    <div>
+                      <b>案由&nbsp;&nbsp;</b>
+                      <span>
+                        共有人优先购买权纠纷
+                      </span>
+                    </div>
+                    <hr style="border-top:1px dotted #ddd;margin:.5rem auto;height: 1px">
+                    <div style="display: inline-flex">
+                      <b style="width: 11rem">案情&nbsp;&nbsp;</b>
+                      <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet assumenda consequuntur cupiditate delectus dolore et eveniet explicabo harum maiores molestias nam nostrum optio perspiciatis quam ratione rem tempora, vel vero!
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="panel panel-default" style="min-height: 32rem">
+                <div class="panel-heading clearfix">
+                  <i class="pull-left"></i>
+                  <h4 class="panel-title pull-left">案件类型</h4>
+                </div>
+                <div class="panel-body" id="case_style">
+
+                    <div class="row">
+                      <div class="col-xs-6">
+                        <strong>承办人</strong>
+                        <ul class="list-unstyled">
+                          <li>
+                            姓名&nbsp;&nbsp;
+                            <span>孙江</span>
+                          </li>
+                          <li>
+                            电话&nbsp;&nbsp;
+                            <span>1888888888888</span>
+                          </li>
+                          <li>
+                            地址&nbsp;&nbsp;
+                            <span>杭州市滨江区某某社区</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-xs-6">
+                        <strong>承办人</strong>
+                        <ul class="list-unstyled">
+                          <li>
+                            姓名&nbsp;&nbsp;
+                            <span>孙江</span>
+                          </li>
+                          <li>
+                            电话&nbsp;&nbsp;
+                            <span>1888888888888</span>
+                          </li>
+                          <li>
+                            地址&nbsp;&nbsp;
+                            <span>杭州市滨江区某某社区</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-6">
+                        <strong>承办人</strong>
+                        <ul class="list-unstyled">
+                          <li>
+                            姓名&nbsp;&nbsp;
+                            <span>孙江</span>
+                          </li>
+                          <li>
+                            电话&nbsp;&nbsp;
+                            <span>1888888888888</span>
+                          </li>
+                          <li>
+                            地址&nbsp;&nbsp;
+                            <span>杭州市滨江区某某社区</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="panel panel-default" style="height: 48rem">
+            <div class="panel-heading clearfix">
+              <i class="pull-left"></i>
+              <h4 class="panel-title pull-left">
+                执行情况
+              </h4>
+              <button class="btn btn-primary btn-sm pull-right" data-toggle="modal" data-target="#myModal">添加</button>
+            </div>
+            <!--响应式表格-->
+            <div class="table-responsive">
+              <table class="table table-striped text-center" style="border-bottom: 1px solid #ddd">
+                <tbody>
+                <tr>
+                  <th class="text-center">案件</th>
+                  <th class="text-center">案件</th>
+                  <th class="text-center">案件</th>
+                  <th class="text-center">案件</th>
+                </tr>
+                <tr>
+                  <td>案件</td>
+                  <td>案件案件案件案件案件案件案件</td>
+                  <td>案件</td>
+                  <td>案件</td>
+                </tr>
+                <tr>
+                  <td>案件</td>
+                  <td>案件</td>
+                  <td>案件</td>
+                  <td>案件</td>
+                </tr>
+                </tbody>
+
+              </table>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!--标签页-->
+        <div class="col-xs-12">
+          <div id="tab_content">
+
+                <ul class="nav nav-tabs" id="myTab">
+                  <li class="active">
+                    <a href="#tab_video" data-toggle="tab">视频</a>
+                  </li>
+                  <li>
+                    <a href="#tab_img" data-toggle="tab">图片</a>
+                  </li>
+                  <li>
+                    <a href="#tab_text" data-toggle="tab">文字</a>
+                  </li>
+                </ul>
+              
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div class="tab-pane active" id="tab_video">
+                  <ul class="list-unstyled list-inline">
+                    <li>
+                      <video src="res/Preview%20new.mp4" controls width="400" height="250"></video>
+                    </li>
+                    <li>
+                      <video src="res/Preview%20new.mp4" controls width="400" height="250"></video>
+                    </li>
+                    <li>
+                      <video src="res/Preview%20new.mp4" controls width="400" height="250"></video>
+                    </li>
+                    <li>
+                      <video src="res/Preview%20new.mp4" controls width="400" height="250"></video>
+                    </li>
+                    <li>
+                      <video src="res/Preview%20new.mp4" controls width="400" height="250"></video>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-pane" id="tab_img">
+                  <ul class="list-inline list-unstyled">
+                    <li>
+                      <img src="img/img2.jpg" alt="" width="">
+                    </li>
+                    <li>
+                      <img src="img/img2.jpg" alt="" width="">
+                    </li>
+                    <li>
+                      <img src="img/img2.jpg" alt="" width="">
+                    </li>
+                    <li>
+                      <img src="img/img2.jpg" alt="" width="">
+                    </li>
+                    <li>
+                      <img src="img/img2.jpg" alt="" width="">
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-pane" id="tab_text">
+                  <div style="display: flex;flex-wrap: wrap;overflow: hidden">
+                    this is a text
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+<!--引入jquery,bootstrap js-->
+<script src="../../resources/js/jquery-1.11.3.js"></script>
+<script src="../../resources/js/bootstrap.min.js"></script>
+  <script src="js/case_detail.js"></script>
+<!--引入bootlint.js检查格式错误-->
+<!--<script src="../../resources/js/bootlint.js"></script>-->
+<!--<script>-->
+<!--bootlint.showLintReportForCurrentDocument([])-->
+<!--</script>-->
+</body>
+</html>
+

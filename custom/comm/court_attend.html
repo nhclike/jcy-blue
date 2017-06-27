@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--1,lang="zh-cn"-->
+<head lang="zh-cn">
+  <meta charset="UTF-8">
+  <!--2,viewport-->
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <!--3,x-ua-compatible-->
+  <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+  <title></title>
+  <!--4引入两个兼容文件-->
+  <!--[if it IE 9]>
+  <script src="../../resources/js/html5shiv.min.js"></script>
+  <script src="../../resources/js/respond.min.js"></script>
+  <![endif]-->
+  <!--6引入bootstrap.css-->
+  <link rel="stylesheet" href="../../resources/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/court_attend.css">
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top navbar-style-custom"
+     style="height: 114px">
+  <div class="container-fluid" style="padding: 1rem">
+    <div class="navbar-left">
+      <div style="margin-top: 10px">
+        <img src="img/logo.png" alt="">
+        <span>人民检察院审讯指挥系统</span>
+      </div>
+    </div>
+    <!--小屏幕下拉显示-->
+    <div class="collapse navbar-collapse clearfix" id="nav_logo">
+      <div class="navbar-left">
+        <a href="#" class="pull-right">
+          <img src="img/startCourt.png"
+               alt="">
+          <h3>开始庭审</h3>
+        </a>
+        <a href="#" class="pull-right">
+          <img src="img/stopCourt.png"
+               alt="">
+          <h3>结束庭审</h3>
+        </a>
+        <a href="#" class="pull-right">
+          <img src="img/controlCenter.png"
+               alt="">
+          <h3>指挥中心</h3>
+        </a>
+      </div>
+
+      <div class="navbar-right">
+        <a href="" style="font-size: 25px">
+          <img
+              src="img/exit.png" alt="" />
+          <h1 class="pull-right">退出</h1>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+  <section id="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-8">
+          <div class="thumbnail">
+            <div id="video">
+              <div class="clearfix">
+                <p class="pull-right">
+                  <img src="img/connect.png" alt="">
+                  <br>
+                  <a href="">连接指挥中心</a>
+                </p>
+                <p class="pull-right">
+                  <img src="img/stop.png" alt="">
+                  <br>
+                  <a href="">停止本地录像</a>
+                </p>
+              </div>
+              <!--<video src="res/Preview%20new.mp4"></video>-->
+            </div>
+
+            <div class="caption">
+              <h3>案件信息</h3>
+              <div class="row">
+                <div class="col-xs-3">
+                  <ul class="list-unstyled">
+                    <li>
+                      <b>案号：</b>
+                      <span>浙1158案号</span>
+                    </li>
+                    <li>
+                      <b>被讯问人：</b>
+                      <span>王磊</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-xs-3">
+                  <ul class="list-unstyled">
+                    <li>
+                      <b>案由：</b>
+                      <span>盗用专利纠纷</span>
+                    </li>
+                    <li>
+                      <b>讯问人：</b>
+                      <span>李广</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-xs-3">
+                  <ul class="list-unstyled">
+                    <li>
+                      <b>审讯地点：</b>
+                      <span>某某法庭</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-xs-3">
+                  <ul class="list-unstyled">
+                    <li>
+                      <b>审讯状态：</b>
+                      <span>待召开</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3>消息通讯</h3>
+            </div>
+            <div class="panel-body">
+              <ul class="list-unstyled"   id='chat-list' style="OVERFLOW:auto">
+                <!-- 时间信息 -->
+                <li class="text-center">
+                  <div class="chat-time" id="currentTime">
+                    10:00:00
+                  </div>
+                </li>
+                <li>
+                  <div class="media">
+                    <div class="media-left media-middle">
+                      <b href="#">
+                        <img class="media-object" src="img/developer.png">
+                      </b>
+                    </div>
+                    <div class="media-body">
+                      <span class="left">
+                        <i></i>
+                        <b>
+                          马上要开庭了，准备好了吗?
+                        </b>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="media">
+                    <div class="media-body clearfix">
+                      <span class="right">
+                        <b>准备好了，可以开庭了</b>
+                        <i></i>
+                      </span>
+                    </div>
+                    <div class="media-right media-middle">
+                      <b href="#">
+                        <img class="media-object" src="img/developer.png">
+                      </b>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="panel-footer">
+              <textarea name="msginput" id="msginput" rows="4" class="form-control"></textarea>
+              <br>
+              <div class="text-right">
+                <button class="btn btn-primary">发送</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--引入jquery,bootstrap js-->
+  <script src="../../resources/js/jquery-1.11.3.js"></script>
+  <script src="../../resources/js/bootstrap.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

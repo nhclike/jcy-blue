@@ -1,0 +1,75 @@
+ul{
+  padding:0 !important;
+  border:none !important;
+}
+
+.navbar-style-custom{
+  background: @bg_color;
+}
+
+#header{
+  @bg_color:#337AB7;
+  @a_color:#fff;
+  @a_link_color:#fff;
+  @a_visited_color:#fff;
+  @a_hover_color:#000;
+  @a_active_color:#000;
+  a{
+    color: @a_color;
+    background-color:@bg_color;
+    &:link{
+      color: @a_link_color;
+    }
+    &:visited{
+      color: @a_visited_color;
+      background: @bg_color;
+    }
+    &:hover{
+      color: @a_hover_color;
+    }
+    &:active{
+      color: @a_active_color;
+    }
+  }
+  nav{
+    .container-fluid{
+      .navbar-header{
+        span{
+        }
+      }
+      //小屏幕下拉显示内容
+      #nav_logo{
+        /*小屏幕下拉显示内容*/
+        ul{
+          //toplist
+          li{
+            min-width: 10rem;
+            text-align: center;
+            //dropdownlist
+            ul.dropdown-menu{
+              min-width: 10rem;
+              //dropdown item
+              li{
+                a{
+                  min-height: 4rem;
+                  &:hover{
+                    background:@bg_color*1.5;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@font-face {
+  font-family: 'CrystalPersonalUse';
+  src: url('../../../resources/fonts/font.ttf') format('truetype'),
+  url('../../../resources/fonts/font.eot');
+  font-weight: normal;
+  font-style: normal;
+}
+

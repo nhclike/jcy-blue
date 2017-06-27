@@ -1,0 +1,53 @@
+.model_center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+section {
+  margin-top: 4.3rem;
+}
+section #breadcrumb_nav {
+  margin-bottom: .5rem;
+  border-bottom: 1px solid #ddd;
+}
+section #breadcrumb_nav .breadcrumb {
+  background-color: #fff;
+  margin: 0;
+}
+section #breadcrumb_nav .breadcrumb li a {
+  color: #237AE5;
+}
+section .container-fluid .row .panel-heading {
+  background-color: #E6F0FF;
+}
+section .container-fluid .row .panel-heading i {
+  height: 2rem;
+  width: .5rem;
+  background-color: #337AB7;
+  border: 1px solid #337AB7;
+  margin: 0 1rem;
+}
+section .container-fluid .row #case_style .row ul.list-unstyled li {
+  border-bottom: 1px dotted #ddd;
+  padding: .6rem 0;
+  width: 90% ;
+}
+section .container-fluid .row #tab_content ul.nav li {
+  width: 10rem;
+  text-align: center;
+}
+section .container-fluid .row #tab_content ul.nav li.active a,
+section .container-fluid .row #tab_content ul.nav li.active a:hover,
+section .container-fluid .row #tab_content ul.nav li.active a:focus {
+  color: #fff;
+  background-color: #337AB7;
+}
+section .container-fluid .row #tab_content .tab-content {
+  border: 1px solid #ddd;
+  border-top: none;
+  padding: 2rem;
+}
+section .container-fluid .row #tab_content .tab-content .tab-pane ul li {
+  padding: 2rem;
+}

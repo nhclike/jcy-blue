@@ -1,0 +1,42 @@
+#section .container {
+  width: 100%;
+}
+#section .container .row .panel {
+  margin: 0;
+}
+#section .container .row .panel .panel-heading {
+  background-color: #E6F0FF;
+}
+#section .container .row .panel .panel-heading .panel_title {
+  margin: 10px 0;
+}
+#section .container .row .panel .panel-heading .panel_title i {
+  height: 2rem;
+  width: .5rem;
+  background-color: #337AB7;
+  border: 1px solid #337AB7;
+  margin: 0 1rem;
+}
+#section .container .row .panel .panel-heading .panel_title h4 {
+  font-size: 22px;
+}
+#section .container .row .panel ul.list-unstyled {
+  margin: 0;
+}
+#section .container .row .panel ul.list-unstyled li {
+  border-bottom: 1px dotted #ddd;
+  padding: .6rem 0;
+  overflow: hidden;
+}
+#section .container .row .panel ul.list-unstyled li b {
+  display: block;
+  float: left;
+  text-align: right;
+  margin: 0 1rem;
+  font-weight: normal;
+  width: 5rem;
+}
+#section .container .row .panel ul.list-unstyled li span {
+  display: block;
+  float: left;
+}

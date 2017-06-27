@@ -1,0 +1,202 @@
+/*头部样式*/
+.navbar-style-custom {
+  background: #329DFF;
+}
+.navbar-style-custom .navbar-left img {
+  width: 74px;
+  margin-left: 30px;
+}
+.navbar-style-custom .navbar-left span {
+  color: #fff;
+  font-size: 42px;
+  margin-left: 10px;
+  position: relative;
+  top: 5px;
+}
+.navbar-style-custom #nav_logo .navbar-left {
+  margin-left: 40px;
+}
+.navbar-style-custom #nav_logo .navbar-left a {
+  display: block;
+  width: 90px;
+  text-align: center;
+  margin: 5px 10px;
+  padding: 5px;
+  color: #fff;
+}
+.navbar-style-custom #nav_logo .navbar-left a img {
+  margin: 0 !important;
+  width: 50px;
+}
+.navbar-style-custom #nav_logo .navbar-left a h3 {
+  color: #fff;
+  font-size: 20px;
+  margin: 5px auto;
+}
+.navbar-style-custom #nav_logo .navbar-left a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.navbar-style-custom #nav_logo .navbar-right a {
+  display: block;
+  overflow: hidden;
+  background-color: #329DFF;
+  color: #fff;
+  text-decoration: none;
+  margin: 25px 20px 25px 0;
+  vertical-align: middle;
+}
+.navbar-style-custom #nav_logo .navbar-right a h1 {
+  margin: 0;
+}
+/*主体内容样式*/
+#section {
+  background-color: #F0F8FF;
+  padding-top: 114px;
+}
+#section .container {
+  width: 100%;
+}
+#section .container .row {
+  padding: 2rem;
+}
+#section .container .row .col-xs-8 .thumbnail {
+  box-shadow: 5px 5px 5px #ddd;
+  padding: 2rem;
+  text-align: center;
+}
+#section .container .row .col-xs-8 .thumbnail #video {
+  width: 100%;
+  min-height: 575px;
+  background-color: #000;
+  position: relative;
+  float: left;
+}
+#section .container .row .col-xs-8 .thumbnail #video div {
+  padding: 10px;
+}
+#section .container .row .col-xs-8 .thumbnail #video div p {
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  width: 10%;
+  margin: 0  5px;
+}
+#section .container .row .col-xs-8 .thumbnail #video div p img {
+  margin: 5px auto;
+}
+#section .container .row .col-xs-8 .thumbnail #video div p a {
+  color: #fff;
+}
+#section .container .row .col-xs-8 .thumbnail #video div p a：hover {
+  color: #fff;
+  text-decoration: none;
+}
+#section .container .row .col-xs-8 .thumbnail .caption {
+  font-size: 24px;
+  clear: both;
+}
+#section .container .row .col-xs-8 .thumbnail .caption h3 {
+  text-align: left;
+  color: #329DFF;
+}
+#section .container .row .col-xs-8 .thumbnail .caption .row {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+}
+#section .container .row .col-xs-8 .thumbnail .caption .row .col-xs-3 {
+  padding: 0;
+}
+#section .container .row .col-xs-8 .thumbnail .caption .row .col-xs-3 ul li b {
+  font-weight: normal;
+}
+#section .container .row .col-xs-8 .thumbnail .caption .row .col-xs-3 ul li span {
+  color: #999;
+}
+#section .container .row .col-xs-4 .panel {
+  box-shadow: 5px 5px 5px #ddd;
+}
+#section .container .row .col-xs-4 .panel .panel-heading {
+  color: #329DFF;
+  background-color: #fff;
+}
+#section .container .row .col-xs-4 .panel .panel-body {
+  padding: 0;
+  overflow: hidden;
+}
+#section .container .row .col-xs-4 .panel .panel-body #chat-list {
+  height: 540px;
+  margin: 15px;
+}
+#section .container .row .col-xs-4 .panel .panel-body #chat-list li {
+  display: inline;
+}
+#section .container .row .col-xs-4 .panel .panel-body #chat-list li .media {
+  margin: 8px 0;
+  overflow: hidden;
+}
+#section .container .row .col-xs-4 .panel .panel-body #chat-list li .media span.left {
+  display: block;
+  position: relative;
+  float: left;
+  margin-left: 15px;
+}
+#section .container .row .col-xs-4 .panel .panel-body #chat-list li .media span.left b {
+  font-weight: normal;
+  font-size: 20px;
+  display: block;
+  padding: 5px;
+  background-color: #D9F4FE;
+  border-radius: 5px;
+  color: #000;
+}
+#section .container .row .col-xs-4 .panel .panel-body #chat-list li .media span.left b:hover {
+  text-decoration: none;
+}
+#section .container .row .col-xs-4 .panel .panel-body #chat-list li .media span.left i {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 10px 15px 10px 0;
+  border-style: solid;
+  border-color: transparent #D9F4FE transparent transparent;
+  left: -15px;
+  top: 10px;
+}
+#section .container .row .col-xs-4 .panel .panel-body #chat-list li .media span.right {
+  display: block;
+  position: relative;
+  float: right;
+  margin-right: 15px;
+}
+#section .container .row .col-xs-4 .panel .panel-body #chat-list li .media span.right b {
+  font-weight: normal;
+  font-size: 20px;
+  display: block;
+  padding: 5px;
+  background-color: #329DFF;
+  border-radius: 5px;
+  color: #fff;
+}
+#section .container .row .col-xs-4 .panel .panel-body #chat-list li .media span.right b:hover {
+  text-decoration: none;
+}
+#section .container .row .col-xs-4 .panel .panel-body #chat-list li .media span.right i {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 10px 0 10px 15px;
+  border-style: solid;
+  border-color: transparent transparent transparent #329DFF;
+  right: -15px;
+  top: 10px;
+}
+#section .container .row .col-xs-4 .panel .panel-footer {
+  padding: 0;
+  background-color: #fff;
+}
+#section .container .row .col-xs-4 .panel .panel-footer textarea {
+  border: none;
+}

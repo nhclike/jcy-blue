@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<!--1,lang="zh-cn"-->
+<head lang="zh-cn">
+  <meta charset="UTF-8">
+  <!--2,viewport-->
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <!--3,x-ua-compatible-->
+  <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+  <title></title>
+  <!--4引入两个兼容文件-->
+  <!--[if it IE 9]>
+  <script src="../../resources/js/html5shiv.min.js"></script>
+  <script src="../../resources/js/respond.min.js"></script>
+  <![endif]-->
+  <!--6引入bootstrap.css-->
+  <link rel="stylesheet" href="../../resources/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+  <div id="main_header"></div>
+
+  <section id="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-2">
+            <ul class="list-unstyled" id="tab_list">
+              <li class="li_active">
+                <a href="#tab_index">
+                  <img src="img/index_2.png" alt="">
+                  <br>
+                  <span>首页</span>
+                </a>
+              </li>
+              <li>
+                <a href="#tab_case_build">
+                  <img src="img/casebuild_1.png" alt="">
+                  <br>
+                  <span>立案排期</span>
+                </a>
+              </li>
+              <li>
+                <a href="#tab_case_play">
+                  <img src="img/caseplay_1.png" alt="">
+                  <br>
+                  <span>案件点播</span>
+                </a>
+              </li>
+              <li>
+                <a href="#tab_case_look">
+                  <img src="img/caselook_1.png" alt="">
+                  <br>
+                  <span>统计查看</span>
+                </a>
+              </li>
+            </ul>
+        </div>
+        <div class="col-xs-10" id="context_show">
+          <div id="tab_index" class="show">
+           <div class="row">
+             <div class="col-xs-4">
+               <div class="thumbnail">
+                 <ul class="list-unstyled">
+                   <li style="border-bottom: 2px solid #ddd">
+                     <h3 style="margin: 8px auto">某法院某法庭</h3>
+                   </li>
+                   <li>
+                     <b>审讯案号：</b>
+                     <span>某某案号</span>
+                   </li>
+                   <li>
+                     <b>审讯时间：</b>
+                     <span>2017-06-22 10:00:00</span>
+                   </li>
+                   <li>
+                     <b>录&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;制：</b>
+
+                       <input type="checkbox" id="checkbox_input" checked>
+                     <label for="checkbox_input" style="color: #999;font-weight: normal">进行录制</label>
+                   </li>
+                   <li class="text-center">
+                     <button class="btn btn-default btn-lg" style="background-color: #2B99FF;color: #fff">庭审出席</button>
+                   </li>
+                 </ul>
+               </div>
+             </div>
+
+
+           </div>
+          </div>
+          <div id="tab_case_build">
+            this is case build
+          </div>
+          <div id="tab_case_play">
+            this is case play
+          </div>
+          <div id="tab_case_look">
+            this is case look
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--引入jquery,bootstrap js-->
+  <script src="../../resources/js/jquery-1.11.3.js"></script>
+  <script src="../../resources/js/bootstrap.min.js"></script>
+  <script src="js/index.js"></script>
+  <!--引入bootlint.js检查格式错误-->
+  <!--<script src="../../resources/js/bootlint.js"></script>-->
+  <!--<script>-->
+  <!--bootlint.showLintReportForCurrentDocument([])-->
+  <!--</script>-->
+</body>
+</html>
+

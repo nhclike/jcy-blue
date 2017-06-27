@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<!--1,lang="zh-cn"-->
+<head lang="zh-cn">
+  <meta charset="UTF-8">
+  <!--2,viewport-->
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <!--3,x-ua-compatible-->
+  <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+  <title></title>
+  <!--4引入两个兼容文件-->
+  <!--[if it IE 9]>
+  <script src="../../resources/js/html5shiv.min.js"></script>
+  <script src="../../resources/js/respond.min.js"></script>
+  <![endif]-->
+  <!--6引入bootstrap.css-->
+  <link rel="stylesheet" href="../../resources/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/case_administer.css">
+</head>
+<body>
+
+ <div id="main_header"></div>
+
+ <section style="margin-top: 5rem" id="section">
+   <!--面包屑导航-->
+   <div id="breadcrumb_nav">
+     <ol class="breadcrumb">
+       <li><a href="#">首页</a></li>
+       <li><a href="#" class="active">执行案件</a></li>
+     </ol>
+   </div>
+   <div class="container" style="margin: 0">
+     <div class="row">
+       <div class="col-md-3">
+         <div class="row">
+           <div class="col-xs-12">
+             <div style="width: 100%;background: #000;height: 300px">
+               this is a screen show
+             </div>
+           </div>
+         </div>
+         <div class="row">
+           <div class="col-xs-12">
+             <div class="panel  panel-default">
+               <div class="panel-heading clearfix">
+                 <div class="panel_title">
+                   <i class="pull-left"></i>
+                   <h4 class="panel-title pull-left">案件信息</h4>
+                 </div>
+               </div>
+               <div>
+                 <ul class="list-unstyled">
+                   <li>
+                     <b>案号</b>
+                     <span>测试002</span>
+                   </li>
+                   <li>
+                     <b>案件类型</b>
+                     <span>刑事案件</span>
+                   </li>
+                   <li>
+                     <b>案由</b>
+                     <span>劳动合同纠纷</span>
+                   </li>
+                   <li>
+                     <b>执行时间</b>
+                     <span>2017-1-1 12:00:00</span>
+                   </li>
+                   <li>
+                     <b>承办人</b>
+                     <span>李四</span>
+                   </li>
+                 </ul>
+               </div>
+             </div>
+           </div>
+           <div class="col-xs-12">
+             <div class="panel  panel-default">
+               <div class="panel-heading clearfix">
+                 <div class="pull-left" class="panel_title">
+                   <i class="pull-left"></i>
+                   <h4 class="panel-title pull-left">执行设备
+                   </h4>
+                 </div>
+
+                 <div style="float:right;"  id="hideTool">
+                   <img src="img/metting.png"  data-target="#mettingModal" data-toggle="modal" data-toggle="tooltip"  title="语音会议" style="cursor:pointer;margin:8px 12px;">
+                   <img src="img/hide.png" data-target="#myModal" data-toggle="modal" style="cursor:pointer;margin-bottom:4px">
+                   <h4  style="display:inline-block">已隐藏设备</h4>
+
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div class="col-md-9">
+         <div id="map" style="width: 100%;background-color: #000">
+           this is a map
+         </div>
+       </div>
+     </div>
+   </div>
+ </section>
+
+
+
+
+
+  <!--引入jquery,bootstrap js-->
+  <script src="../../resources/js/jquery-1.11.3.js"></script>
+  <script src="../../resources/js/bootstrap.min.js"></script>
+  <script src="js/case_administer.js"></script>
+  <!--引入bootlint.js检查格式错误-->
+  <!--<script src="../../resources/js/bootlint.js"></script>-->
+  <!--<script>-->
+  <!--bootlint.showLintReportForCurrentDocument([])-->
+  <!--</script>-->
+</body>
+</html>
+

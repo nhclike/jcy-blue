@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<!--1,lang="zh-cn"-->
+<head lang="zh-cn">
+  <meta charset="UTF-8">
+  <!--2,viewport-->
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <!--3,x-ua-compatible-->
+  <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+  <title></title>
+  <!--4引入两个兼容文件-->
+  <!--[if it IE 9]>
+    <script src="../../resources/js/html5shiv.min.js"></script>
+    <script src="../../resources/js/respond.min.js"></script>
+    <![endif]-->
+  <!--6引入bootstrap.css-->
+  <link rel="stylesheet" href="../../resources/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/case_list.css">
+</head>
+<body>
+
+  <div id="main_header"></div>
+
+  <section style="margin-top: 5rem">
+    <!--面包屑导航-->
+    <div class="breadcrumb_nav">
+      <ol class="breadcrumb">
+        <li><a href="#">首页</a></li>
+        <li><a href="#" class="active">列表</a></li>
+      </ol>
+    </div>
+    <!--查询表格-->
+    <div class="container-fluid" id="container_context">
+      <!--查询列表-->
+      <div class="row">
+          <form class="form-inline col-sm-12 col-md-10">
+            <div class="row">
+              <div class="form-group form-group-sm col-sm-4 col-xs-12 col-md-2">
+                <div>
+                  <label for="" class="control-label">法院</label>
+                  <input id="myCar" list="cars" class="form-control" placeholder="杭州中院" style="width: 80%"/>
+                  <datalist id="cars">
+                    <option value="BMW">
+                    <option value="Ford">
+                    <option value="Volvo">
+                  </datalist>
+                </div>
+
+              </div>
+              <div class="form-group form-group-sm col-sm-4 col-xs-12 col-md-2">
+                  <label for="Courtsel" class="control-label">法院</label>
+                  <input id="myCar" list="cars" class="form-control" placeholder="杭州中院" style="width: 80%"/>
+                  <datalist id="cars">
+                    <option value="BMW">
+                    <option value="Ford">
+                    <option value="Volvo">
+                  </datalist>
+              </div>
+              <div class="form-group form-group-sm col-sm-4 col-xs-12 col-md-2">
+                <label for="Courtsel" class="control-label">法院</label>
+                <input id="myCar" list="cars" class="form-control"  style="width: 80%"/>
+                <datalist id="cars">
+                  <option value="BMW">
+                  <option value="Ford">
+                  <option value="Volvo">
+                </datalist>
+              </div>
+              <div class="form-group form-group-sm col-sm-4 col-xs-12 col-md-3">
+                <label for="Courtsel" class="control-label"> 案&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号 </label>
+                <input type="text" placeholder="1111111111111111" class="form-control"  style="width: 70%">
+              </div>
+              <div class="form-group form-group-sm col-sm-8 col-xs-12 col-md-3">
+                <label for="Courtsel" class="control-label">模糊查询</label>
+                <input type="text" placeholder="" class="form-control"  style="width: 70%">
+              </div>
+            </div>
+          </form>
+          <div class="col-sm-12 col-md-2 text-center">
+            <button class="btn btn-primary">&nbsp;&nbsp;查&nbsp;&nbsp;询&nbsp;&nbsp;</button>
+            <button class="btn  btn-danger">新增案件</button>
+          </div>
+      </div>
+      <!--表格-->
+      <div class="row">
+        <div class="col-xs-12">
+          <!--table-->
+          <div id="table_content">
+            <div class="table-responsive">
+              <table class="table table-striped text-center table-hover" style="border-bottom: 1px solid #ddd" cellpadding=".5rem">
+                <thead style="background-color:#E6F0FF;margin: 2rem 0">
+                <tr>
+                  <th class="text-center">案号</th>
+                  <th class="text-center">执行状态</th>
+                  <th class="text-center">承办人</th>
+                  <th class="text-center">被执行人</th>
+                  <th class="text-center">执行标的</th>
+                  <th class="text-center">创建时间</th>
+                  <th class="text-center">操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td style="vertical-align: middle;color:#237AE5">(2017)浙0102民初11号</td>
+                  <td style="vertical-align: middle">执行完成</td>
+                  <td style="vertical-align: middle">何春海</td>
+                  <td style="vertical-align: middle">赖成夏</td>
+                  <td style="vertical-align: middle">2017423</td>
+                  <td style="vertical-align: middle">2017-04-23</td>
+                  <td>
+                    <button class="btn btn-sm btn-primary">现场执行</button>
+                    <button class="btn btn-sm btn-primary">现场执行</button>
+                    <button class="btn btn-sm btn-primary">现场执行</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: middle;color:#237AE5">(2017)浙0102民初11号</td>
+                  <td style="vertical-align: middle">执行完成</td>
+                  <td style="vertical-align: middle">何春海</td>
+                  <td style="vertical-align: middle">赖成夏</td>
+                  <td style="vertical-align: middle">2017423</td>
+                  <td style="vertical-align: middle">2017-04-23</td>
+                  <td>
+                    <button class="btn btn-sm btn-primary">现场执行</button>
+                    <button class="btn btn-sm btn-primary">现场执行</button>
+                    <button class="btn btn-sm btn-primary">现场执行</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="vertical-align: middle;color:#237AE5">(2017)浙0102民初11号</td>
+                  <td style="vertical-align: middle">执行完成</td>
+                  <td style="vertical-align: middle">何春海</td>
+                  <td style="vertical-align: middle">赖成夏</td>
+                  <td style="vertical-align: middle">2017423</td>
+                  <td style="vertical-align: middle">2017-04-23</td>
+                  <td>
+                    <button class="btn btn-sm btn-primary">现场执行</button>
+                    <button class="btn btn-sm btn-primary">现场执行</button>
+                    <button class="btn btn-sm btn-primary">现场执行</button>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--底部页签-->
+      <div class="row">
+        <div class="col-md-4 pull-right">
+          <div class="pull-right">
+              <div class="pull-right" style="width:20%;vertical-align: middle">
+                <span>跳转到</span>
+                <input type="text" style="width: 30%">
+                <span>页</span>
+              </div>
+              <ul class="pagination pull-right" style="margin: 0 1rem" id="page_list">
+                <li>
+                  <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li>
+                  <a href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <p>
+            共 <a href="">6</a>
+            页 <a href="">30</a>
+            条记录
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--引入jquery,bootstrap js-->
+  <script src="../../resources/js/jquery-1.11.3.js"></script>
+  <script src="../../resources/js/bootstrap.min.js"></script>
+  <script src="js/case_list.js"></script>
+</body>
+</html>
+
