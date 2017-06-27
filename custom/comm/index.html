@@ -21,6 +21,44 @@
 
   <div id="main_header"></div>
 
+  <div class="modal fade" id="dateList" data-backdrop="static">
+    <div class="model_center" style="width: 50rem">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close" data-dismiss="modal">&times;</span>
+          <h4>排期列表</h4>
+        </div>
+        <div class="modal-body">
+          <div class="table-responsive">
+            <table class="table text-center table-hover" cellpadding="2rem">
+              <thead>
+              <tr>
+                <th class="text-center">案号</th>
+                <th class="text-center">开庭时间</th>
+                <th class="text-center">庭审状态</th>
+                <th class="text-center">庭审状态</th>
+
+                <th class="text-center">操作</th>
+              </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td >(2017)浙0102民初11号</td>
+                  <td>2017-06-24 10:00</td>
+                  <td>休庭中</td>
+                  <td>2</td>
+                  <td>
+                    <a href="">进入庭审</a>
+                  </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <section id="section">
     <div class="container">
       <div class="row">
@@ -68,6 +106,7 @@
                    <li>
                      <b>审讯案号：</b>
                      <span>某某案号</span>
+                     <a type="button" class="btn btn-default" data-toggle="modal" data-target="#dateList">排期列表</a>
                    </li>
                    <li>
                      <b>审讯时间：</b>
@@ -75,8 +114,7 @@
                    </li>
                    <li>
                      <b>录&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;制：</b>
-
-                       <input type="checkbox" id="checkbox_input" checked>
+                     <input type="checkbox" id="checkbox_input" checked>
                      <label for="checkbox_input" style="color: #999;font-weight: normal">进行录制</label>
                    </li>
                    <li class="text-center">
@@ -85,12 +123,147 @@
                  </ul>
                </div>
              </div>
-
-
            </div>
           </div>
           <div id="tab_case_build">
-            this is case build
+            <!--查询表格-->
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-12 build_btn">
+                  <button class="btn btn-default">新建案件</button>
+                  <button class="btn btn-default">新建排期</button>
+                </div>
+              </div>
+              <!--查询列表-->
+              <div class="row">
+                <form class="form-inline col-sm-12">
+                  <div class="row">
+                    <div class="form-group col-sm-2 col-xs-12">
+                      <label for="" class="control-label sr-only">案号</label>
+                      <input type="text" placeholder="案号" class="form-control">
+                    </div>
+                    <div class="form-group col-sm-2 col-xs-12">
+                      <label for="" class="control-label sr-only">案由</label>
+                      <input type="text" placeholder="案由" class="form-control">
+                    </div>
+                    <div class="form-group col-sm-2 col-xs-12">
+                      <label for="" class="control-label sr-only">开始时间</label>
+                      <input type="text" placeholder="开始时间" class="form-control">
+                    </div>
+                    <div class="form-group col-sm-2 col-xs-12">
+                      <label for="" class="control-label sr-only">被讯人</label>
+                      <input type="text" placeholder="被讯人" class="form-control">
+                    </div>
+                    <div class="form-group col-sm-2 col-xs-12">
+                      <label for="" class="control-label sr-only">讯问人</label>
+                      <input type="text" placeholder="讯问人" class="form-control">
+                    </div>
+                    <div class="form-group col-sm-2 col-xs-12">
+                      <button type="button" class="btn btn-danger">查&nbsp;&nbsp;&nbsp;&nbsp;询</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!--表格-->
+              <div class="row">
+                <div class="col-xs-12">
+                  <!--table-->
+                  <div id="table_content">
+                    <div class="table-responsive">
+                      <table class="table text-center table-hover" cellpadding="2rem">
+                        <thead>
+                          <tr>
+                            <th class="text-center">案号</th>
+                            <th class="text-center">审讯地点</th>
+                            <th class="text-center">开始时间</th>
+                            <th class="text-center">审讯次数</th>
+                            <th class="text-center">讯问类型</th>
+                            <th class="text-center">被讯问人</th>
+                            <th class="text-center">讯问人</th>
+                            <th class="text-center">操作</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td >(2017)浙0102民初11号</td>
+                            <td>某某法院5号法庭</td>
+                            <td>2017-06-24 10:00</td>
+                            <td>2</td>
+                            <td>案件类型</td>
+                            <td>王大军</td>
+                            <td>张小伟</td>
+                            <td>
+                              <a href="">编辑</a>
+                              <a href="">删除</a>
+                              <a href="">查看</a>
+                              <a href="">进入审讯</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td >(2017)浙0102民初11号</td>
+                            <td>某某法院5号法庭</td>
+                            <td>2017-06-24 10:00</td>
+                            <td>2</td>
+                            <td>案件类型</td>
+                            <td>王大军</td>
+                            <td>张小伟</td>
+                            <td>
+                              <a href="">编辑</a>
+                              <a href="">删除</a>
+                              <a href="">查看</a>
+                              <a href="">进入审讯</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td >(2017)浙0102民初11号</td>
+                            <td>某某法院5号法庭</td>
+                            <td>2017-06-24 10:00</td>
+                            <td>2</td>
+                            <td>案件类型</td>
+                            <td>王大军</td>
+                            <td>张小伟</td>
+                            <td>
+                              <a href="">编辑</a>
+                              <a href="">删除</a>
+                              <a href="">查看</a>
+                              <a href="">进入审讯</a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--底部页签-->
+              <div class="row">
+                <div class="col-xs-4 col-xs-offset-8 col-md-3 col-md-offset-9 col-lg-3 col-md-offset-9">
+
+                    <ul class="pagination pull-left" id="page_list">
+                      <li>
+                        <a href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li class="active"><a href="#">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">3</a></li>
+                      <li><a href="#">4</a></li>
+                      <li><a href="#">5</a></li>
+                      <li>
+                        <a href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="pull-left">
+                      <span>共
+                      <a href="#">5</a>
+                      页</span>
+                    </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div id="tab_case_play">
             this is case play

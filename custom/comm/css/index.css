@@ -7,6 +7,11 @@
 .show {
   display: block;
 }
+/*模态框样式*/
+#dateList .modal-header {
+  background-color: #2B99FF;
+  color: #fff;
+}
 body,
 ul,
 li,
@@ -111,12 +116,46 @@ form {
 #section .container .row .col-xs-10 #tab_index .row .col-xs-4 .thumbnail ul li span {
   color: #999;
 }
+#section .container .row .col-xs-10 #tab_index .row .col-xs-4 .thumbnail ul li a {
+  color: red;
+  border: 1px solid red;
+  margin-left: 25px;
+}
 #section .container .row .col-xs-10 #tab_index .row .col-xs-4 .thumbnail ul li button {
   background-color: #2B99FF;
   color: #fff;
 }
 #section .container .row .col-xs-10 #tab_index .row .col-xs-4 .thumbnail ul li button:focus {
   outline: none;
+}
+#section .container .row .col-xs-10 #tab_case_build .container-fluid {
+  padding: 30px;
+}
+#section .container .row .col-xs-10 #tab_case_build .container-fluid .row {
+  margin: 10px 0;
+}
+#section .container .row .col-xs-10 #tab_case_build .container-fluid .row .build_btn button {
+  background-color: #2B99FF;
+  color: #fff;
+}
+#section .container .row .col-xs-10 #tab_case_build .container-fluid .row form input {
+  border: 1px solid #2B99FF;
+}
+#section .container .row .col-xs-10 #tab_case_build .container-fluid .row form button {
+  color: #fff;
+}
+#section .container .row .col-xs-10 #tab_case_build .container-fluid .row #table_content table thead {
+  background-color: #278ae6;
+  color: #fff;
+}
+#section .container .row .col-xs-10 #tab_case_build .container-fluid .row #table_content table tbody {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  min-height: 500px;
+}
+#section .container .row .col-xs-10 #tab_case_build .container-fluid .row #table_content table tbody tr {
+  vertical-align: middle;
+  height: 30px!important;
 }
 input[type='checkbox'] {
   -webkit-appearance: none;

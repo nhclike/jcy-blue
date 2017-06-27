@@ -43,4 +43,10 @@ $(function () {
       $(n).attr('src',url1);
     });
   });
+
+
+  //立案排期底部标签页的点击激活
+  $('#page_list').on('click','li',function(){
+    $(this).addClass('active').siblings('.active').removeClass('active');
+  })
 });
