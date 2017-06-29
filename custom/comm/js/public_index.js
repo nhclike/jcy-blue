@@ -51,7 +51,7 @@ $(function () {
             $modal_dateList.modal({backdrop:'static'});
           });
           $("#case_index").contents().find(".btn_court_attend").click(function () {
-            location.href='/nhc/custom/comm/court_attend.html'
+            location.href='../comm/court_attend.html'
           });
         };
       //iframe为case_date加载完成后绑定事件
