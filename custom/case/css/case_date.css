@@ -30,7 +30,6 @@ body {
 .container-fluid .row #table_content table tbody {
   background-color: #fff;
   border: 1px solid #ddd;
-  min-height: 500px;
 }
 .container-fluid .row #table_content table tbody tr td {
   vertical-align: middle;
