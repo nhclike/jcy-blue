@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<!--1,lang="zh-cn"-->
+<head lang="zh-cn">
+  <meta charset="UTF-8">
+  <!--2,viewport-->
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <!--3,x-ua-compatible-->
+  <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+  <title></title>
+  <!--4引入两个兼容文件-->
+  <!--[if it IE 9]>
+  <script src="../../resources/js/html5shiv.min.js"></script>
+  <script src="../../resources/js/respond.min.js"></script>
+  <![endif]-->
+  <!--6引入bootstrap.css-->
+  <link rel="stylesheet" href="../../resources/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/public_index.css">
+</head>
+<body>
+
+  <div id="main_header"></div>
+  <div class="modal fade" id="dateList" data-backdrop="static">
+    <div class="modal-dialog" style="width: 50rem">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close" data-dismiss="modal">&times;</span>
+          <h4>排期列表</h4>
+        </div>
+        <div class="modal-body">
+          <div class="table-responsive">
+            <table class="table text-center table-hover" cellpadding="2rem">
+              <thead>
+              <tr>
+                <th class="text-center">案号</th>
+                <th class="text-center">开庭时间</th>
+                <th class="text-center">庭审状态</th>
+                <th class="text-center">庭审状态</th>
+
+                <th class="text-center">操作</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td >(2017)浙0102民初11号</td>
+                <td>2017-06-24 10:00</td>
+                <td>休庭中</td>
+                <td>2</td>
+                <td>
+                  <a href="">进入庭审</a>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section id="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-2">
+            <ul class="list-unstyled" id="tab_list">
+              <li class="li_active">
+                <a href="#tab_index">
+                  <img src="img/index_2.png" alt="">
+                  <br>
+                  <span>首页</span>
+                </a>
+              </li>
+              <li>
+                <a href="#tab_case_build">
+                  <img src="img/casebuild_1.png" alt="">
+                  <br>
+                  <span>立案排期</span>
+                </a>
+              </li>
+              <li>
+                <a href="#tab_case_play">
+                  <img src="img/caseplay_1.png" alt="">
+                  <br>
+                  <span>案件点播</span>
+                </a>
+              </li>
+              <li>
+                <a href="#tab_case_look">
+                  <img src="img/caselook_1.png" alt="">
+                  <br>
+                  <span>统计查看</span>
+                </a>
+              </li>
+            </ul>
+        </div>
+        <div class="col-xs-10" id="context_show">
+          <div id="tab_index" class="show">
+            <div class="embed-responsive embed-responsive-4by3">
+              <iframe class="embed-responsive-item" src="../case/case_index.html" id="case_index" name="ifr_index"></iframe>
+            </div>
+          </div>
+          <div id="tab_case_build">
+            <div class="embed-responsive embed-responsive-4by3">
+              <iframe class="embed-responsive-item" src="../case/case_date.html"></iframe>
+            </div>
+          </div>
+          <div id="tab_case_play">
+            <div class="embed-responsive embed-responsive-4by3">
+              <iframe class="embed-responsive-item" src="../case/case_play.html"></iframe>
+            </div>
+          </div>
+          <div id="tab_case_look">
+            this is case look
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--引入jquery,bootstrap js-->
+  <script src="../../resources/js/jquery-1.11.3.js"></script>
+  <script src="../../resources/js/bootstrap.min.js"></script>
+  <script src="js/public_index.js"></script>
+  <!--引入bootlint.js检查格式错误-->
+  <!--<script src="../../resources/js/bootlint.js"></script>-->
+  <!--<script>-->
+  <!--bootlint.showLintReportForCurrentDocument([])-->
+  <!--</script>-->
+</body>
+</html>
+

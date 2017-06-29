@@ -8,14 +8,15 @@
 .show{
   display: block;
 }
+
 /*模态框样式*/
 #dateList{
+  @theme_color:#2B99FF;
   .modal-header{
     background-color: @theme_color;
     color:#fff;
   }
 }
-
 //重写
 body,ul,li,p,h1,h2,h3,h4,h5,h6,img,br,hr,table,tr,td,dl,dt,dd,form {
   margin: 0;
@@ -119,63 +120,46 @@ body,ul,li,p,h1,h2,h3,h4,h5,h6,img,br,hr,table,tr,td,dl,dt,dd,form {
         }
         #tab_case_build{
           //padding: 20px;
-          .container-fluid{
-            padding: 30px;
-            .row{
-              margin: 10px 0;
-              .build_btn{
-                button{
-                  background-color:@theme_color ;
-                  color:#fff;
-                }
-              }
-              form{
-                input{
-                  border: 1px solid @theme_color;
-                }
-                button{
-                  color:#fff;
-                }
-              }
-              #table_content{
-                table{
-
-                  thead{
-                    background-color: @theme_color*.9;
-                    color: #fff;
-                  }
-                  tbody{
-                    background-color: #fff;
-                    border: 1px solid #ddd;
-                    min-height: 500px;
-                    tr{
-                      vertical-align: middle;
-                      height: 30px!important;
-                    }
-                  }
-                }
-              }
-            }
-          }
+          //.container-fluid{
+          //  padding: 30px;
+          //  .row{
+          //    margin: 10px 0;
+          //    .build_btn{
+          //      button{
+          //        background-color:@theme_color ;
+          //        color:#fff;
+          //      }
+          //    }
+          //    form{
+          //      input{
+          //        border: 1px solid @theme_color;
+          //      }
+          //      button{
+          //        color:#fff;
+          //      }
+          //    }
+          //    #table_content{
+          //      table{
+          //
+          //        thead{
+          //          background-color: @theme_color*.9;
+          //          color: #fff;
+          //        }
+          //        tbody{
+          //          background-color: #fff;
+          //          border: 1px solid #ddd;
+          //          min-height: 500px;
+          //          tr{
+          //            vertical-align: middle;
+          //            height: 30px!important;
+          //          }
+          //        }
+          //      }
+          //    }
+          //  }
+          //}
         }
       }
     }
   }
-}
-
-input[type='checkbox']{
- -webkit-appearance: none;
- -moz-appearance: none;
-  background: #fff url(../img/unchoose.png);
-  height: 24px;
-  vertical-align: middle;
-  width: 24px;
-  margin: 0 !important;
-}
-input[type="checkbox"]:checked {
-  background: #fff url(../img/choose.png) 0 0;
-}
-/**解决ie出现边框问题**/
-input[type="checkbox"]:focus{
-  outline: none;
 }
