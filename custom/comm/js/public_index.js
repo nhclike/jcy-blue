@@ -1,26 +1,20 @@
 
 $(function () {
-  var $modal = $('#dateList');
+
   //加载头部
   $('#main_header').load("../comm/nav_navbar.html",function(){
     //解决ie中min-height的100%占屏问题
     //获取窗口高度
     var window_height=$(document).height();
-    var header_height;
     //获取头部高度
-     header_height=$('#header nav.navbar').innerHeight();
+    var header_height=$('#header nav.navbar').innerHeight();
     //得到应该显示的高度
     var min_height=window_height-header_height;
     //设置左右两个模块的高度
     $('#tab_list').height(min_height);
     $('#context_show').height(min_height);
-    //获取case_index的iframe中的按钮触发模态框
-    console.log($("#case_index").contents().find("#date_list"),1);
-    $("#case_index").contents().find("#date_list").click(function () {
-      console.log(1);
-      $modal.modal({backdrop:'static'});
-    });
   });
+
   //标签页
   $("#tab_list li a").click(function(e){
     e.preventDefault();
@@ -44,15 +38,41 @@ $(function () {
       $(n).attr('src',url1);
     });
   });
+
+  //获取模态框
+  var $modal_dateList = $('#dateList');
+  var $modal_caseDate=$('#caseDate');
+  //iframe加载完成后解决模态框事件绑定问题
+      //iframe为case_index加载完成后绑定模态框按钮触发事件
+        var case_index=document.getElementById('case_index');
+        case_index.onload=function () {
+          //获取case_index的iframe中的按钮触发模态框
+          $("#case_index").contents().find(".btn_date_list").click(function () {
+            $modal_dateList.modal({backdrop:'static'});
+          });
+          $("#case_index").contents().find(".btn_court_attend").click(function () {
+            location.href='/nhc/custom/comm/court_attend.html'
+          });
+        };
+      //iframe为case_date加载完成后绑定事件
+      var case_date=document.getElementById('case_date');
+      case_date.onload=function () {
+        //给新建案件按钮绑定事件并且跳转
+        $("#case_date").contents().find("#btn_new_case").click(function () {
+          $('#case_date').attr('src','../case/case_new_build.html');
+
+          case_date.onload=function(){
+            $('#case_date').contents().find('#btn_newBuildCase_cancel').click(function () {
+              //$('#case_date').attr('src','../case/case_date.html');
+              top.location.reload();
+            });
+          };
+        });
+
+        console.log($("#case_date").contents().find("#btn_new_date"),2);
+        $("#case_date").contents().find("#btn_new_date").click(function () {
+          $modal_caseDate.modal({backdrop:'static'});
+        })
+      }
 });
-document.body.onbeforeunload = function (event)
-{
-  var c = event || window.event;
-  if (/webkit/.test(navigator.userAgent.toLowerCase())) {
-    return "离开页面将导致数据丢失！";
-  }
-  else
-  {
-    c.returnValue = "离开页面将导致数据丢失！";
-  }
-};
+

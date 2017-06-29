@@ -1,14 +1,63 @@
+.show {
+  display: block;
+}
 .model_center {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.show {
-  display: block;
-}
 /*模态框样式*/
-#dateList .modal-header {
+#dateList .modal-content {
+  min-height: 600px;
+  min-width: 900px ;
+}
+#dateList .modal-content .modal-header {
+  background-color: #2B99FF;
+  color: #fff;
+}
+#dateList .modal-content .modal-body table {
+  border: 1px solid #ddd;
+  width: 100%;
+}
+#dateList .modal-content .modal-body table thead {
+  background-color: #278ae6;
+  color: #fff;
+}
+#dateList .modal-content .modal-body table thead tr th {
+  height: 50px;
+  vertical-align: middle;
+  font-size: 19px;
+  font-weight: normal;
+}
+#dateList .modal-content .modal-body table tbody tr td {
+  height: 50px;
+  vertical-align: middle;
+}
+#caseDate .modal-content {
+  min-height: 600px;
+  min-width: 900px ;
+}
+#caseDate .modal-content .modal-header {
+  background-color: #2B99FF;
+  color: #fff;
+}
+#caseDate .modal-content .modal-body {
+  padding: 40px;
+}
+#caseDate .modal-content .modal-body form .form-group {
+  margin: 30px 20px;
+}
+#caseDate .modal-content .modal-body form .form-group label {
+  font-size: 20px;
+  font-weight: normal;
+}
+#caseDate .modal-content .modal-body form .form-group button {
+  width: 120px;
+  margin: 10px 20px;
+  vertical-align: middle;
+}
+#caseDate .modal-content .modal-body form .form-group button:first-child {
   background-color: #2B99FF;
   color: #fff;
 }
@@ -72,7 +121,7 @@ form {
   margin: .8rem auto;
 }
 #section .container .row .col-xs-2 ul.list-unstyled li.li_active {
-  background-color: #F4F8FB;
+  background-color: #E7F5FF;
 }
 #section .container .row .col-xs-2 ul.list-unstyled li.li_active a {
   color: #2B99FF;
@@ -94,37 +143,4 @@ form {
   left: 0;
   width: 100%;
   display: none;
-}
-#section .container .row .col-xs-10 #tab_index .row {
-  margin: 0;
-  padding: 3rem 3rem;
-}
-#section .container .row .col-xs-10 #tab_index .row .col-xs-4 .thumbnail {
-  margin: 1rem auto;
-  box-shadow: 2px 2px 3px #ddd;
-}
-#section .container .row .col-xs-10 #tab_index .row .col-xs-4 .thumbnail ul {
-  margin: 2rem auto;
-}
-#section .container .row .col-xs-10 #tab_index .row .col-xs-4 .thumbnail ul li {
-  margin: 1rem 3rem;
-  font-size: 2rem;
-}
-#section .container .row .col-xs-10 #tab_index .row .col-xs-4 .thumbnail ul li b {
-  font-weight: 500;
-}
-#section .container .row .col-xs-10 #tab_index .row .col-xs-4 .thumbnail ul li span {
-  color: #999;
-}
-#section .container .row .col-xs-10 #tab_index .row .col-xs-4 .thumbnail ul li a {
-  color: red;
-  border: 1px solid red;
-  margin-left: 25px;
-}
-#section .container .row .col-xs-10 #tab_index .row .col-xs-4 .thumbnail ul li button {
-  background-color: #2B99FF;
-  color: #fff;
-}
-#section .container .row .col-xs-10 #tab_index .row .col-xs-4 .thumbnail ul li button:focus {
-  outline: none;
 }

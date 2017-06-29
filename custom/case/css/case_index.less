@@ -1,4 +1,5 @@
-
+@theme_color:#2B99FF;
+@bg_color:#F0F8FF;
 input[type='checkbox']{
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -22,12 +23,13 @@ input[type="checkbox"]:focus{
   left:50%;
   transform: translate(-50%,-50%);
 }
+body{
+  background-color:@bg_color;
+}
 .container-fluid{
-  @theme_color:#2B99FF;
   padding: 30px;
   .row{
     margin: 0;
-
     .col-xs-4{
       .thumbnail{
         margin: 1rem auto;

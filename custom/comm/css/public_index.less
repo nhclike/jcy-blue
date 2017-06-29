@@ -1,22 +1,86 @@
 @theme_color:#2B99FF;
+@bg_color:#F0F8FF;
+@li_bg_color:#E7F5FF;
+.show{
+  display: block;
+}
 .model_center{
   position: fixed;
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
 }
-.show{
-  display: block;
-}
-
 /*模态框样式*/
-#dateList{
-  @theme_color:#2B99FF;
-  .modal-header{
-    background-color: @theme_color;
-    color:#fff;
+  //排期列表模态框样式
+  #dateList{
+    .modal-content{
+      min-height: 600px;
+      min-width:900px ;
+      .modal-header{
+        background-color: @theme_color;
+        color:#fff;
+      }
+      .modal-body{
+        table{
+          border:1px solid #ddd;
+          width: 100%;
+          thead{
+            background-color: @theme_color*.9;
+            color: #fff;
+            tr{
+              th{
+                height: 50px;
+                vertical-align: middle;
+                font-size: 19px;
+                font-weight: normal;
+              }
+            }
+          }
+          tbody{
+            tr{
+              td{
+                height: 50px;
+                vertical-align: middle;
+              }
+            }
+          }
+        }
+      }
+    }
   }
-}
+  //案件排期模态框样式
+  #caseDate{
+    .modal-content{
+      min-height: 600px;
+      min-width:900px ;
+      .modal-header{
+        background-color: @theme_color;
+        color:#fff;
+      }
+      .modal-body{
+        padding: 40px;
+        form{
+          .form-group{
+            margin:30px 20px;
+            label{
+              font-size: 20px;
+              font-weight: normal;
+            }
+            button{
+              width: 120px;
+              margin: 10px 20px;
+              vertical-align: middle;
+
+            }
+            button:first-child{
+              background-color: @theme_color;
+              color:#fff;
+            }
+          }
+        }
+      }
+    }
+  }
 //重写
 body,ul,li,p,h1,h2,h3,h4,h5,h6,img,br,hr,table,tr,td,dl,dt,dd,form {
   margin: 0;
@@ -27,7 +91,6 @@ body,ul,li,p,h1,h2,h3,h4,h5,h6,img,br,hr,table,tr,td,dl,dt,dd,form {
   padding-top:114px;
   .container{
     width: 100%;
-    //min-height: 73rem;
     .row{
       .col-xs-2{
         width: 10%;
@@ -37,7 +100,6 @@ body,ul,li,p,h1,h2,h3,h4,h5,h6,img,br,hr,table,tr,td,dl,dt,dd,form {
         ul.list-unstyled{
           text-align: center;
           margin: 0;
-          //min-height: 73rem;
           height: 100%;
           li{
             background-color: #fff;
@@ -59,7 +121,7 @@ body,ul,li,p,h1,h2,h3,h4,h5,h6,img,br,hr,table,tr,td,dl,dt,dd,form {
             }
           }
           li.li_active{
-            background-color:#F4F8FB;
+            background-color:@li_bg_color;
             a{
               color:@theme_color;
               &:focus{
@@ -77,87 +139,7 @@ body,ul,li,p,h1,h2,h3,h4,h5,h6,img,br,hr,table,tr,td,dl,dt,dd,form {
           top:0;
           left: 0;
           width: 100%;
-          //min-height:73rem;
-          //background-color: #F0F8FF;
           display: none;
-        }
-        #tab_index{
-          .row{
-            margin: 0;
-            padding: 3rem 3rem;
-            .col-xs-4{
-              .thumbnail{
-                margin: 1rem auto;
-                box-shadow: 2px 2px 3px #ddd;
-                ul{
-                  margin: 2rem auto;
-                  li{
-                    margin:1rem 3rem;
-                    font-size: 2rem;
-                    b{
-                      font-weight: 500;
-                    }
-                    span{
-                      color: #999;
-                    }
-                    a{
-                      color: red;
-                      border: 1px solid red;
-                      margin-left:25px;
-                    }
-                    button{
-                      background-color:@theme_color;
-                      color: #fff;
-                      &:focus{
-                        outline: none;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-        #tab_case_build{
-          //padding: 20px;
-          //.container-fluid{
-          //  padding: 30px;
-          //  .row{
-          //    margin: 10px 0;
-          //    .build_btn{
-          //      button{
-          //        background-color:@theme_color ;
-          //        color:#fff;
-          //      }
-          //    }
-          //    form{
-          //      input{
-          //        border: 1px solid @theme_color;
-          //      }
-          //      button{
-          //        color:#fff;
-          //      }
-          //    }
-          //    #table_content{
-          //      table{
-          //
-          //        thead{
-          //          background-color: @theme_color*.9;
-          //          color: #fff;
-          //        }
-          //        tbody{
-          //          background-color: #fff;
-          //          border: 1px solid #ddd;
-          //          min-height: 500px;
-          //          tr{
-          //            vertical-align: middle;
-          //            height: 30px!important;
-          //          }
-          //        }
-          //      }
-          //    }
-          //  }
-          //}
         }
       }
     }

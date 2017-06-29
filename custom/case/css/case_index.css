@@ -20,6 +20,9 @@ input[type="checkbox"]:focus {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+body {
+  background-color: #F0F8FF;
+}
 .container-fluid {
   padding: 30px;
 }

@@ -20,12 +20,13 @@
 <body>
 
   <div id="main_header"></div>
+  <!--排期列表模态框-->
   <div class="modal fade" id="dateList" data-backdrop="static">
-    <div class="modal-dialog" style="width: 50rem">
+    <div class="model_center">
       <div class="modal-content">
         <div class="modal-header">
           <span class="close" data-dismiss="modal">&times;</span>
-          <h4>排期列表</h4>
+          <h3>排期列表</h3>
         </div>
         <div class="modal-body">
           <div class="table-responsive">
@@ -41,18 +42,153 @@
               </tr>
               </thead>
               <tbody>
-              <tr>
-                <td >(2017)浙0102民初11号</td>
-                <td>2017-06-24 10:00</td>
-                <td>休庭中</td>
-                <td>2</td>
-                <td>
-                  <a href="">进入庭审</a>
-                </td>
-              </tr>
+                <tr>
+                  <td >(2017)浙0102民初11号</td>
+                  <td>2017-06-24 10:00</td>
+                  <td>休庭中</td>
+                  <td>2</td>
+                  <td>
+                    <a href="">进入庭审</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td >(2017)浙0102民初11号</td>
+                  <td>2017-06-24 10:00</td>
+                  <td>休庭中</td>
+                  <td>2</td>
+                  <td>
+                    <a href="">进入庭审</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td >(2017)浙0102民初11号</td>
+                  <td>2017-06-24 10:00</td>
+                  <td>休庭中</td>
+                  <td>2</td>
+                  <td>
+                    <a href="">进入庭审</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td >(2017)浙0102民初11号</td>
+                  <td>2017-06-24 10:00</td>
+                  <td>休庭中</td>
+                  <td>2</td>
+                  <td>
+                    <a href="">进入庭审</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td >(2017)浙0102民初11号</td>
+                  <td>2017-06-24 10:00</td>
+                  <td>休庭中</td>
+                  <td>2</td>
+                  <td>
+                    <a href="">进入庭审</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td >(2017)浙0102民初11号</td>
+                  <td>2017-06-24 10:00</td>
+                  <td>休庭中</td>
+                  <td>2</td>
+                  <td>
+                    <a href="">进入庭审</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td >(2017)浙0102民初11号</td>
+                  <td>2017-06-24 10:00</td>
+                  <td>休庭中</td>
+                  <td>2</td>
+                  <td>
+                    <a href="">进入庭审</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
               </tbody>
             </table>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--案件排期模态框-->
+  <div class="modal fade" id="caseDate" data-backdrop="static">
+    <div class="model_center">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close" data-dismiss="modal">&times;</span>
+          <h3>案件排期</h3>
+        </div>
+        <div class="modal-body">
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label for="" class="control-label col-xs-2">案&nbsp;&nbsp;&nbsp;&nbsp;号:</label>
+              <div class="col-xs-10">
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="" class="control-label col-xs-2">案&nbsp;&nbsp;&nbsp;&nbsp;由:</label>
+              <div class="col-xs-10">
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="" class="control-label col-xs-2">审讯地点</label>
+              <div class="col-xs-4">
+                <input type="text" class="form-control">
+              </div>
+              <label for="" class="control-label col-xs-2">审讯次数</label>
+              <div class="col-xs-4">
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="" class="control-label col-xs-2">开始时间:</label>
+              <div class="col-xs-4">
+                <input type="text" class="form-control" style="background: url('img/timetip.png') no-repeat 200px 6px">
+              </div>
+              <label for="" class="control-label col-xs-2">讯问类型:</label>
+              <div class="col-xs-4">
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="" class="control-label col-xs-2">被讯问人:</label>
+              <div class="col-xs-4">
+                <input type="text" class="form-control">
+              </div>
+              <label for="" class="control-label col-xs-2">讯问人:</label>
+              <div class="col-xs-4">
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="" class="control-label col-xs-2">排期情况:</label>
+              <div class="col-xs-4">
+                <select name="" id="" class="form-control">
+                  <option value="">9:00-10:00</option>
+                  <option value="">10:00-11:00</option>
+                  <option value="">14:00-15:00</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-xs-6 col-xs-offset-3">
+                <button class="btn btn-default btn-lg">保存</button>
+                <button class="btn btn-default btn-lg">取消</button>
+              </div>
+
+            </div>
+          </form>
         </div>
       </div>
     </div>
@@ -70,8 +206,8 @@
                 </a>
               </li>
               <li>
-                <a href="#tab_case_build">
-                  <img src="img/casebuild_1.png" alt="">
+                <a href="#tab_case_date">
+                  <img src="img/casedate_1.png" alt="">
                   <br>
                   <span>立案排期</span>
                 </a>
@@ -95,12 +231,12 @@
         <div class="col-xs-10" id="context_show">
           <div id="tab_index" class="show">
             <div class="embed-responsive embed-responsive-4by3">
-              <iframe class="embed-responsive-item" src="../case/case_index.html" id="case_index" name="ifr_index"></iframe>
+              <iframe class="embed-responsive-item" src="../case/case_index.html" id="case_index"></iframe>
             </div>
           </div>
-          <div id="tab_case_build">
+          <div id="tab_case_date">
             <div class="embed-responsive embed-responsive-4by3">
-              <iframe class="embed-responsive-item" src="../case/case_date.html"></iframe>
+              <iframe class="embed-responsive-item" src="../case/case_date.html" id="case_date"></iframe>
             </div>
           </div>
           <div id="tab_case_play">
@@ -120,11 +256,6 @@
   <script src="../../resources/js/jquery-1.11.3.js"></script>
   <script src="../../resources/js/bootstrap.min.js"></script>
   <script src="js/public_index.js"></script>
-  <!--引入bootlint.js检查格式错误-->
-  <!--<script src="../../resources/js/bootlint.js"></script>-->
-  <!--<script>-->
-  <!--bootlint.showLintReportForCurrentDocument([])-->
-  <!--</script>-->
 </body>
 </html>
 

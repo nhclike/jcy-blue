@@ -1,3 +1,6 @@
+body {
+  background-color: #F0F8FF;
+}
 .container-fluid {
   padding: 30px;
 }
@@ -18,14 +21,21 @@
   background-color: #278ae6;
   color: #fff;
 }
+.container-fluid .row #table_content table thead tr th {
+  height: 50px;
+  vertical-align: middle;
+  font-size: 18px;
+  font-weight: normal;
+}
 .container-fluid .row #table_content table tbody {
   background-color: #fff;
   border: 1px solid #ddd;
   min-height: 500px;
 }
-.container-fluid .row #table_content table tbody tr {
+.container-fluid .row #table_content table tbody tr td {
   vertical-align: middle;
-  height: 30px!important;
+  height: 50px;
+  font-size: 18px;
 }
 .container-fluid .row #page_list {
   margin: 0;

@@ -1,5 +1,9 @@
+@theme_color:#2B99FF;
+@bg_color:#F0F8FF;
+body{
+  background-color: @bg_color;
+}
 .container-fluid{
-  @theme_color:#2B99FF;
   padding: 30px;
   .row{
     margin: 10px 0;
@@ -19,18 +23,28 @@
     }
     #table_content{
       table{
-
         thead{
           background-color: @theme_color*.9;
           color: #fff;
+          tr{
+            th{
+              height: 50px;
+              vertical-align: middle;
+              font-size: 18px;
+              font-weight: normal;
+            }
+          }
         }
         tbody{
           background-color: #fff;
           border: 1px solid #ddd;
           min-height: 500px;
           tr{
-            vertical-align: middle;
-            height: 30px!important;
+            td{
+              vertical-align: middle;
+              height: 50px;
+              font-size: 18px;
+            }
           }
         }
       }
